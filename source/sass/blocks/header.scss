@@ -1,0 +1,30 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 21px 21px 59px;
+  }
+  &__search-btn {
+    @include clear-button;
+    margin-left: auto;
+  }
+  &__basket-btn {
+    @include clear-button;
+    margin-left: auto;
+  }
+  &__burger {
+    @include clear-button;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__logo {
+    margin-right: 140.43px;
+  }
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+}
