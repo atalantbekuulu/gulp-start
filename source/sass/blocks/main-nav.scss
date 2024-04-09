@@ -1,7 +1,9 @@
 .main-nav {
+  color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: 400;
   &__list {
     @include clear-list;
     &--showed {
@@ -13,11 +15,14 @@
     }
   }
   &__item {
-    font-size: 16px;
-    font-weight: 400;
-    padding: 5px 3px;
-  }
-  &__item a {
-    padding: 5px;
+    @media (min-width: 768px) {
+      font-size: 24px;
+      margin: 12px;
+      font-size: 16px;
+    }
+    @media (min-width: 1728px) {
+      padding: 18px;
+      font-size: 24px;
+    }
   }
 }
