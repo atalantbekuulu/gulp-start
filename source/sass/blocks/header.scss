@@ -16,10 +16,20 @@
   &__search-btn {
     @include clear-button;
     margin-left: auto;
+    img {
+      @media (min-width: 768px) {
+        width: 29px;
+      }
+    }
   }
   &__basket-btn {
     @include clear-button;
     margin-left: auto;
+    img {
+      @media (min-width: 768px) {
+        width: 32px;
+      }
+    }
   }
   &__burger {
     @include clear-button;
@@ -32,13 +42,13 @@
     @media (min-width: 768px) {
       margin-right: 143px;
     }
-  }
-  &__logo img {
-    @media (min-width: 768px) {
-      width: 93px;
-    }
     @media (min-width: 1728px) {
       margin-right: 363px;
+    }
+    img {
+      @media (min-width: 768px) {
+        width: 93px;
+      }
     }
   }
   &__btn-container {
@@ -46,15 +56,5 @@
     justify-content: center;
     gap: 10px;
     margin-left: auto;
-  }
-  &__search-btn img {
-    @media (min-width: 768px) {
-      width: 29px;
-    }
-  }
-  &__basket-btn img {
-    @media (min-width: 768px) {
-      width: 32px;
-    }
   }
 }
