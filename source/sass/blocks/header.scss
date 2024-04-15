@@ -1,0 +1,60 @@
+.header {
+  &__container {
+    display: flex;
+    align-items: center;
+    @media (max-width: 767px) {
+      padding: 14px;
+    }
+    @media (min-width: 768px) {
+      padding: 21px;
+    }
+    @media (min-width: 1728px) {
+      text-align: center;
+      padding: 77px 84px 226px 84px;
+    }
+  }
+  &__search-btn {
+    @include clear-button;
+    margin-left: auto;
+    img {
+      @media (min-width: 768px) {
+        width: 29px;
+      }
+    }
+  }
+  &__basket-btn {
+    @include clear-button;
+    margin-left: auto;
+    img {
+      @media (min-width: 768px) {
+        width: 32px;
+      }
+    }
+  }
+  &__burger {
+    @include clear-button;
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+  &__logo {
+    margin-right: 119px;
+    @media (min-width: 768px) {
+      margin-right: 143px;
+    }
+    @media (min-width: 1728px) {
+      margin-right: 363px;
+    }
+    img {
+      @media (min-width: 768px) {
+        width: 93px;
+      }
+    }
+  }
+  &__btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: auto;
+  }
+}

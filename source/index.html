@@ -8,40 +8,30 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
-    <header class="header">
-      <a class="header__logo" href="index.html"
-        ><img src="img/logo.svg" alt="logo"
-      /></a>
-      <nav class="header__nav navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="index.html">Главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="About.html">О компании</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="Catalog.html">Каталог</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <button>кнопка</button>
-      <aside>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-        consectetur magnam suscipit doloribus.
-      </aside>
-      <aside>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-        quam dicta odit, voluptate numquam quibusdam asperiores atque quisquam
-        nostrum neque. Eos ducimus necessitatibus tempore nemo eligendi labore
-        dolor ipsum deserunt!Lorem Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Nesciunt eligendi ullam, voluptates numquam ut
-        veritatis vel aspernatur veniam eaque voluptatum, facilis ab sint
-        adipisci blanditiis magni delectus. Quo, asperiores ullam!
-      </aside>
-    </header>
+    <div class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="#">
+          <img src="img/logo.svg" alt="логотип Slick" />
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list main-nav__list--showed">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Магазин</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="header__btn-container">
+          <button type="button" class="header__search-btn">
+            <img src="img/find.svg" alt="кнопка поиска" />
+          </button>
+          <button type="button" class="header__basket-btn">
+            <img src="img/shop.svg" alt="корзина" />
+          </button>
+          <button type="button" class="header__burger">
+            <img src="img/menu.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

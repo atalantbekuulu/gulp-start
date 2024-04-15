@@ -1,0 +1,30 @@
+.main-nav {
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+
+  &__list {
+    @include clear-list;
+    &--showed {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  &__item a {
+    @media (min-width: 768px) {
+      padding: 12px;
+      font-size: 16px;
+      line-height: 25px;
+    }
+    @media (min-width: 1728px) {
+      padding: 18px;
+      font-size: 24px;
+      line-height: 37px;
+    }
+  }
+}
