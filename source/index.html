@@ -13,12 +13,26 @@
         <a class="header__logo" href="#">
           <img src="img/logo.svg" alt="логотип Slick" />
         </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list main-nav__list--showed">
+        <nav class="main-nav main-nav--showed">
+          <button class="main-nav__close">
+            <img src="img/icon-cross.svg" alt="" />
+          </button>
+          <ul class="main-nav__list">
             <li class="main-nav__item"><a href="#">Главная</a></li>
             <li class="main-nav__item"><a href="#">Магазин</a></li>
             <li class="main-nav__item"><a href="#">Контакты</a></li>
           </ul>
+          <div class="main-nav__contacts">
+            <p>Следи за нами в социальных сетях:</p>
+            <ul class="main-nav__social social">
+              <li class="social__item">
+                <a href="#"><img src="img/tg-icon.svg" alt="TG" /></a>
+              </li>
+              <li class="social__item">
+                <a href="#"><img src="img/vk-icon.svg" alt="VK" /></a>
+              </li>
+            </ul>
+          </div>
         </nav>
         <div class="header__btn-container">
           <button type="button" class="header__search-btn">
@@ -26,6 +40,7 @@
           </button>
           <button type="button" class="header__basket-btn">
             <img src="img/shop.svg" alt="корзина" />
+            <span class="header__counter-item">0</span>
           </button>
           <button type="button" class="header__burger">
             <img src="img/menu.svg" alt="" />

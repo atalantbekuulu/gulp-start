@@ -2,9 +2,8 @@
   &__container {
     display: flex;
     align-items: center;
-    @media (max-width: 767px) {
-      padding: 14px;
-    }
+    padding: 14px;
+
     @media (min-width: 768px) {
       padding: 21px;
     }
@@ -15,6 +14,7 @@
   }
   &__search-btn {
     @include clear-button;
+    position: relative;
     margin-left: auto;
     img {
       @media (min-width: 768px) {
@@ -24,6 +24,7 @@
   }
   &__basket-btn {
     @include clear-button;
+    position: relative;
     margin-left: auto;
     img {
       @media (min-width: 768px) {
@@ -33,6 +34,7 @@
   }
   &__burger {
     @include clear-button;
+    position: relative;
     @media (min-width: 768px) {
       display: none;
     }
@@ -54,7 +56,29 @@
   &__btn-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
     margin-left: auto;
+  }
+  &__counter-item {
+    position: absolute;
+    display: flex;
+    top: -5px;
+    right: -5px;
+    font-size: 7px;
+    line-height: 8px;
+    height: 12px;
+    width: 12px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    @media (min-width: 768px) {
+      font-size: 11px;
+      width: 18px;
+      height: 18px;
+      right: -7px;
+      top: -7px;
+    }
   }
 }
