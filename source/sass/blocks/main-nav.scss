@@ -1,14 +1,19 @@
 .main-nav {
-  display: flex;
+  display: block;
   align-items: center;
-  justify-content: space-between;
   font-weight: 400;
-  &__contacts {
-    display: none;
+  @media (max-width: 767px) {
+    padding-top: 78px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #ebebeb;
   }
   &__close {
-    margin-left: auto;
     @include clear-button;
+    margin-left: auto;
     position: absolute;
     display: none;
     width: 11px;
@@ -16,28 +21,20 @@
     top: 10px;
     right: 10px;
   }
-  &__menu {
-    @media (max-width: 767px) {
-      padding-top: 78px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 50%;
-      height: 100vh;
-      background-color: #ebebeb;
-    }
-    &--showed {
+  &__contacts {
+    display: none;
+  }
+  &--showed {
+    .main-nav__contacts {
       display: block;
-      .main-nav__contacts {
-        display: block;
-      }
-      .main-nav__close {
-        display: block;
-        top: 18px;
-        right: 16px;
-      }
+    }
+    .main-nav__close {
+      display: block;
+      top: 18px;
+      right: 16px;
     }
   }
+
   &__list {
     @include clear-list;
     @media (min-width: 768px) {
