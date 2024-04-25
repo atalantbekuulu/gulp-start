@@ -1,5 +1,6 @@
 .main-nav {
   display: block;
+  z-index: 3;
   align-items: center;
   font-weight: 400;
   @media (max-width: 767px) {
@@ -7,9 +8,10 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 50%;
+    width: 57%;
     height: 100vh;
     background-color: #ebebeb;
+    z-index: 2;
   }
   &__close {
     @include clear-button;
@@ -22,6 +24,7 @@
     right: 10px;
   }
   &__contacts {
+    z-index: 3;
     display: none;
   }
   &--showed {

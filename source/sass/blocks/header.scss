@@ -13,6 +13,7 @@
     }
   }
   &__search-btn {
+    z-index: 4;
     @include clear-button;
     position: relative;
     margin-left: auto;
@@ -23,6 +24,7 @@
     }
   }
   &__basket-btn {
+    z-index: 4;
     @include clear-button;
     position: relative;
     margin-left: auto;
@@ -33,6 +35,7 @@
     }
   }
   &__burger {
+    z-index: 4;
     @include clear-button;
     position: relative;
     @media (min-width: 768px) {
