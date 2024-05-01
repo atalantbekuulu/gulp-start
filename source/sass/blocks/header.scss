@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     padding: 14px;
-
     @media (min-width: 768px) {
       padding: 21px;
     }
@@ -35,7 +34,6 @@
     }
   }
   &__burger {
-    z-index: 4;
     @include clear-button;
     position: relative;
     @media (min-width: 768px) {

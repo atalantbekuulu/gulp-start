@@ -1,0 +1,112 @@
+.popular-product {
+  &__container {
+    color: black;
+    padding-bottom: 50px;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 60px;
+      justify-content: center;
+      padding-top: 80px;
+      padding-bottom: 100px;
+    }
+  }
+
+  &__title-block {
+    margin-bottom: 35px;
+
+    @media (min-width: 768px) {
+      width: 300px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    font-size: 45px;
+    line-height: 55px;
+    margin-top: 0;
+    margin-bottom: 24px;
+  }
+
+  &__main-text {
+    display: block;
+    font-size: 24px;
+
+    &::before {
+      display: inline-block;
+      content: "";
+      width: 47px;
+      height: 3px;
+      background-color: #000;
+      vertical-align: middle;
+      transform: translateY(-2px);
+      margin-right: 22px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  &__show-all {
+    @include clear-button;
+    display: block;
+    padding: 18px 48px;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 43px;
+    background-color: black;
+    color: #fff;
+
+    @media (max-width: 767px) {
+        display: none;
+    }
+    }
+    &__slider {
+        position: relative;
+    }
+    
+    &__wrapper {
+        margin-bottom: 20px;
+        @media (min-width: 1728px) {
+            display: flex;
+            gap: 67px;
+        }
+    }
+    &__slide-left {
+        @include clear-button;
+        position: absolute;
+        width: 27px;
+        height: 15px;
+        top: 43%;
+
+        @media (min-width: 768px) {
+            left: -11%;
+        }
+
+        @media (min-width: 1728px) {
+            left: -4%;
+        }
+    }
+    &__slide-right {
+        @include clear-button;
+        position: absolute;
+        width: 27px;
+        height: 15px;
+        top: 43%;
+        right: 0;
+
+        @media (min-width: 768px) {
+            right: -11%;
+        }
+
+        @media (min-width: 1728px) {
+            right: -4%;
+        }
+    }
+}

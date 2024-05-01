@@ -1,0 +1,61 @@
+.marketplace {
+    background-color: black;
+    
+    &__container{
+        display: flex;
+        align-items: center;
+        height: 63px;
+        margin-bottom: 57px;
+        overflow: hidden;
+
+        @media (min-width: 768px) {
+            height: 131px;
+            margin-bottom: 66px;
+        }
+        
+        @media (min-width: 1728px) {
+            height: 162px;
+            margin-bottom: 132px;
+        }
+    }
+
+    &__list{
+        @include clear-list;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        animation: scroll 15s linear infinite alternate;
+    }
+    &__container :hover {
+        animation-play-state: paused;
+    }
+
+    &__item img {
+        @media (max-width: 767px) {
+            height: 16px;
+        }
+    }
+    &__item a {
+        padding: 20px;
+        @media (min-width: 768px) {
+           padding: 44px 90px 44px 90px;
+        }
+        @media (min-width: 1728px) {
+            padding: 56px 98px 56px 98px;
+         }
+    }
+    &__item img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px rgba(240, 9, 9, 0.5);
+    }
+ 
+
+    @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(calc(-20% - 20px));
+        }
+      }
+}

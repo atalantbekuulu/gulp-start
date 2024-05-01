@@ -3,6 +3,11 @@
   z-index: 3;
   align-items: center;
   font-weight: 400;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
   @media (max-width: 767px) {
     padding-top: 78px;
     position: absolute;
@@ -28,6 +33,7 @@
     display: none;
   }
   &--showed {
+    display: block;
     .main-nav__contacts {
       display: block;
     }
@@ -35,6 +41,9 @@
       display: block;
       top: 18px;
       right: 16px;
+    }
+    @media (min-width: 768px) {
+      display: none;
     }
   }
 
