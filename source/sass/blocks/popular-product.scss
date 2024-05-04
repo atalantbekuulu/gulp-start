@@ -1,4 +1,6 @@
 .popular-product {
+  position: relative;
+  z-index: 2;
   &__container {
     color: black;
     padding-bottom: 50px;
