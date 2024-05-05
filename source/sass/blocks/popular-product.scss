@@ -66,49 +66,49 @@
     color: #fff;
 
     @media (max-width: 767px) {
-        display: none;
+      display: none;
     }
-    }
-    &__slider {
-        position: relative;
-    }
-    
-    &__wrapper {
-        margin-bottom: 20px;
-        @media (min-width: 1728px) {
-            display: flex;
-            gap: 67px;
-        }
-    }
-    &__slide-left {
-        @include clear-button;
-        position: absolute;
-        width: 27px;
-        height: 15px;
-        top: 43%;
+  }
+  &__slider {
+    position: relative;
+  }
 
-        @media (min-width: 768px) {
-            left: -11%;
-        }
-
-        @media (min-width: 1728px) {
-            left: -4%;
-        }
+  &__wrapper {
+    margin-bottom: 20px;
+    @media (min-width: 1728px) {
+      display: flex;
+      gap: 67px;
     }
-    &__slide-right {
-        @include clear-button;
-        position: absolute;
-        width: 27px;
-        height: 15px;
-        top: 43%;
-        right: 0;
+  }
+  &__slide-left {
+    @include clear-button;
+    position: absolute;
+    width: 27px;
+    height: 15px;
+    top: 43%;
 
-        @media (min-width: 768px) {
-            right: -11%;
-        }
-
-        @media (min-width: 1728px) {
-            right: -4%;
-        }
+    @media (min-width: 768px) {
+      left: -11%;
     }
+
+    @media (min-width: 1728px) {
+      left: -4%;
+    }
+  }
+  &__slide-right {
+    @include clear-button;
+    position: absolute;
+    width: 27px;
+    height: 15px;
+    top: 43%;
+    right: 0;
+
+    @media (min-width: 768px) {
+      right: -11%;
+    }
+
+    @media (min-width: 1728px) {
+      right: -4%;
+    }
+  }
 }
