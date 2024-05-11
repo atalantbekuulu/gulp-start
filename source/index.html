@@ -14,7 +14,6 @@
           <img src="img/logo.svg" alt="логотип Slick" />
         </a>
         <nav class="main-nav">
-          <!-- main-nav--showed -->
           <button class="main-nav__close">
             <img src="img/icon-cross.svg" alt="" />
           </button>
@@ -41,7 +40,7 @@
           </button>
           <button type="button" class="header__basket-btn">
             <img src="img/shop.svg" alt="корзина" />
-            <span class="header__counter-item">12</span>
+            <span class="header__counter-item">0</span>
           </button>
           <button type="button" class="header__burger">
             <img src="img/menu.svg" alt="" />
@@ -79,5 +78,222 @@
         </div>
       </div>
     </div>
+    <div class="marketplace">
+      <div class="marketplace__container container">
+        <ul class="marketplace__list">
+          <li class="marketplace__item">
+            <a href="#"
+              ><img class="marketplace__ozon" src="img/ozon.svg" alt="ozon"
+            /></a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#"
+              ><img
+                class="marketplace__sbermarket"
+                src="img/wildberries.svg"
+                alt="wildberries"
+            /></a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#">
+              <img class="marketplace__sbermarket" src="img/sbermarket.svg" alt="sbermarket"/>
+            </a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#"
+              ><img
+                class="marketplace__yandex-market"
+                src="img/yandex-market.svg"
+                alt="yandex-market"
+              />
+            </a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#"
+              ><img class="marketplace__ozon" src="img/ozon.svg" alt="ozon"/>
+            </a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#">
+              <img
+                class="marketplace__sbermarket"
+                src="img/wildberries.svg"
+                alt="wildberries"
+              />
+          </a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#">
+              <img
+                class="marketplace__sbermarket"
+                src="img/sbermarket.svg"
+                alt="sbermarket"
+              />
+          </a>
+          </li>
+          <li class="marketplace__item">
+            <a href="#"
+              ><img
+                class="marketplace__yandex-market"
+                src="img/yandex-market.svg"
+                alt="yandex-market"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="popular-product">
+      <div class="popular-product__container container">
+        <div class="popular-product__title-block">
+          <h2 class="popular-product__title">
+            <span class="popular-product__main-text">Сегодня в тренде</span>
+            <span class="popular-product__text">Самые</span>
+            <span class="popular-product__text">Популярные</span>
+          </h2>
+          <p class="popular-product__description">
+            Посмотрите, что чаще всего покупают у нас
+          </p>
+          <button class="popular-product__show-all">Показать все</button>
+        </div>
+
+        <div class="popular-product__slider">
+          <div class="popular-product__wrapper">
+            <div class="shoes shoes--border-radius">
+              <img
+                class="shoes__image shoes__image--slide-size"
+                src="img/slider-sneaker-1.png"
+                alt="sneaker-1"
+              />
+              <span class="shoes__name">Running sport shoe</span>
+              <div class="shoes__price-wrapper">
+                <span class="shoes__price">3999 ₽</span>
+                <button class="shoes__button shoes__button--slide-size"></button>
+              </div>
+            </div>
+
+            <div class="shoes shoes--border-radius shoes--hidden-slide">
+              <img
+                class="shoes__image shoes__image--slide-size"
+                src="img/slider-sneaker-2.png"
+                alt="sneaker-1"
+              />
+              <span class="shoes__name">Running sport shoe</span>
+              <div class="shoes__price-wrapper">
+                <span class="shoes__price">3999 ₽</span>
+                <button class="shoes__button shoes__button--slide-size"></button>
+              </div>
+            </div>
+
+            <div class="shoes shoes--border-radius shoes--hidden-slide">
+              <img
+                class="shoes__image shoes__image--slide-size"
+                src="img/slider-sneaker-3.png"
+                alt="sneaker-1"
+              />
+              <span class="shoes__name">Running sport shoe</span>
+              <div class="shoes__price-wrapper">
+                <span class="shoes__price">3999 ₽</span>
+                <button class="shoes__button shoes__button--slide-size"></button>
+              </div>
+            </div>
+
+            <div class="popular-product__button">
+              <button class="popular-product__slide-left">
+                <img src="img/slide-left.svg" alt="#" />
+              </button>
+              <button class="popular-product__slide-right">
+                <img src="img/slide-right.svg" alt="#" />
+              </button>
+            </div>
+          </div>
+
+          <div class="popular-product__indicator slider-pagination">
+            <button
+              type="button"
+              class="slider-pagination__item slider-pagination__item--small slider-pagination__item--bg-black slider-pagination__item--round"
+            ></button>
+            <button
+              type="button"
+              class="slider-pagination__item slider-pagination__item--big slider-pagination__item--bg-black slider-pagination__item--half-round"
+            ></button>
+            <button
+              type="button"
+              class="slider-pagination__item slider-pagination__item--small slider-pagination__item--bg-black slider-pagination__item--round"
+            ></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="best-selling">
+        <div class="best-selling__container container">
+          <h3 class="best-selling__title best-selling__title--line">
+            Best Selling
+          </h3>
+
+          <div class="best-selling__gender-select">
+            <button
+              type="button"
+              class="best-selling__button best-selling__button--black-button">
+              Мужские
+            </button>
+            <button type="button" class="best-selling__button">Женские</button>
+          </div>
+
+          <div class="best-selling__product">
+            <div class="product-exclusive product-exclusive--hot">
+              <div class="product-exclusive__container product-exclusive__container--border-radius">
+                <img
+                  class="product-exclusive__image"
+                  src="img/slick-formal-sneaker-shoe.png"
+                  alt="shoes-formal"/>
+                <span class="product-exclusive__name">
+                  Slick formal sneaker shoe
+                </span>
+                <div class="product-exclusive__price-container">
+                  <span class="product-exclusive__price">
+                    2999 ₽
+                  </span>
+                  <del class="product-exclusive__old-price">
+                    4999 ₽
+                  </del>
+                  <button type="button"class="product-exclusive__button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="product product--new">
+              <div class="product__container product__container--border-radius">
+                <img
+                  class="product__image"
+                  src="img/slick-sneaker-shoe.png"
+                  alt="sneaker-shoe"/>
+                <span class="product__name">Slick sneaker shoe</span>
+                <div class="product__price-container">
+                  <span class="product__price">2999 ₽ </span>
+                  <del class="product__old-price">3999 ₽</del>
+                  <button type="button" class="product__button"></button>
+                </div>
+              </div>
+            </div>
+            <div class="product">
+              <div class="product__container product__container--border-radius">
+                <img
+                  class="product__image"
+                  src="img/slick-canvas-shoe.png"
+                  alt=""
+                />
+                <span class="product__name">Slick canvas shoe</span>
+                <div class="product__price-container">
+                  <span class="product__price">2999 ₽ </span>
+                  <del class="product__old-price">3999 ₽</del>
+                  <button type="button" class="product__button"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="best-selling__show-all">Показать все</button>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

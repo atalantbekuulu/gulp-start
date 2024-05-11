@@ -1,0 +1,106 @@
+.best-selling {
+  position: relative;
+  color: #000;
+
+  &__container {
+    padding-bottom: 71px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__product {
+    margin-bottom: 40px;
+    display: grid;
+    grid-gap: 25px;
+    @media (min-width: 678px) {
+      grid-template-columns: 364px 364px;
+    }
+    @media (min-width: 1728px) {
+      grid-template-columns: 780px 780px;
+      grid-template-rows: 559px 559px;
+      grid-column-gap: 30px;
+      grid-row-gap: 70px;
+    }
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 62px;
+      font-size: 45px;
+      line-height: 62px;
+    }
+
+    &--line {
+      &::before,
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 41px;
+        height: 3px;
+        background-color: #000;
+        vertical-align: middle;
+        transform: translateY(-2px);
+      }
+
+      &::before {
+        margin-right: 18px;
+      }
+
+      &::after {
+        margin-left: 18px;
+      }
+    }
+  }
+
+  &__gender-select {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 18px;
+
+    @media (min-width: 768px) {
+      margin-bottom: 60px;
+      gap: 24px;
+    }
+
+    @media (min-width: 1728px) {
+      margin-bottom: 81px;
+      gap: 80px;
+    }
+  }
+  &__button {
+    @include clear-button;
+    width: 140px;
+    height: 35px;
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    border: 2px solid #000;
+
+    @media (min-width: 768px) {
+      font-size: 28px;
+      gap: 80px;
+      width: 220px;
+      height: 80px;
+    }
+    &--black-button {
+      background-color: black;
+      color: #fff;
+    }
+  }
+
+  &__show-all {
+    @include clear-button;
+
+    background-color: #000;
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 43px;
+    width: 290px;
+    height: 77px;
+  }
+}
