@@ -29,5 +29,5 @@ const clickBtnModal = (button) => {
 }
 
 modalBtn.forEach(button=>{
-  button.addEventListener('click',clickBtnModal);
+  button.addEventListener('click',()=>{clickBtnModal(button)});
 })
