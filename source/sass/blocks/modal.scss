@@ -26,6 +26,7 @@
     }
 
     &__close {
+        @include clear-button;
         width: 11px;
         height: 11px;
         position: absolute;
