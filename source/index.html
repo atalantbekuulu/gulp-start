@@ -238,58 +238,32 @@
             </button>
             <button type="button" class="best-selling__button">Женские</button>
           </div>
-
-          <div class="best-selling__product">
-            <div class="product-exclusive product-exclusive--hot">
-              <div class="product-exclusive__container product-exclusive__container--border-radius">
-                <img
-                  class="product-exclusive__image"
-                  src="img/slick-formal-sneaker-shoe.png"
-                  alt="shoes-formal"/>
-                <span class="product-exclusive__name">
-                  Slick formal sneaker shoe
-                </span>
-                <div class="product-exclusive__price-container">
-                  <span class="product-exclusive__price">
-                    2999 ₽
+            
+        <template id="product">
+              <div class="product">
+                <div class="product__container product__container--border-radius">
+                  <img
+                    class="product__image"
+                    src="img/slick-formal-sneaker-shoe.png"
+                    alt="shoes-formal"/>
+                  <span class="product__name">
+                    Slick formal sneaker shoe
                   </span>
-                  <del class="product-exclusive__old-price">
-                    4999 ₽
-                  </del>
-                  <button type="button"class="product-exclusive__button add-card-btn"></button>
+                  <div class="product__price-container">
+                    <span class="product__price">
+                      2999 ₽
+                    </span>
+                    <del class="product__old-price">
+                      4999 ₽
+                    </del>
+                    <button type="button"class="product__button add-card-btn"></button>
                 </div>
               </div>
             </div>
-            <div class="product product--new">
-              <div class="product__container product__container--border-radius">
-                <img
-                  class="product__image"
-                  src="img/slick-sneaker-shoe.png"
-                  alt="sneaker-shoe"/>
-                <span class="product__name">Slick sneaker shoe</span>
-                <div class="product__price-container">
-                  <span class="product__price">2999 ₽ </span>
-                  <del class="product__old-price">3999 ₽</del>
-                  <button type="button" class="product__button add-card-btn"></button>
-                </div>
-              </div>
             </div>
-            <div class="product">
-              <div class="product__container product__container--border-radius">
-                <img
-                  class="product__image"
-                  src="img/slick-canvas-shoe.png"
-                  alt=""
-                />
-                <span class="product__name">Slick canvas shoe</span>
-                <div class="product__price-container">
-                  <span class="product__price">2999 ₽ </span>
-                  <del class="product__old-price">3999 ₽</del>
-                  <button type="button" class="product__button add-card-btn"></button>
-                </div>
-              </div>
-            </div>
-          </div>
+          </template> 
+          
+          <div class="best-selling__product"></div>
           <button class="best-selling__show-all">Показать все</button>
         </div>
       </div>
@@ -299,7 +273,6 @@
       <span class="modal__text">Товар успешно добавлен в корзину</span>
       <button class="modal__continue">Продолжить покупки</button>
     </div>
-    <script src="js/script.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="js/main.js" defer type="module"></script>
   </body>
 </html>
