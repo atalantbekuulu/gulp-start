@@ -1,3 +1,4 @@
+import { getAddtoCardBtns}  from "./modal.js";
 
 export default (products, template, target, isTargetList = false, templateClass = '') => {
 
@@ -22,7 +23,7 @@ export default (products, template, target, isTargetList = false, templateClass 
         const priceElement = itemElement.querySelector('.product__price');
         const oldPriceElement = itemElement.querySelector('.product__old-price');
         const buttonElement = itemElement.querySelector('.product__button');
-        const {id, status, image, name, price, oldPrice} = product;
+        const {id, isBig, status, image, name, price, oldPrice} = product;
 
         itemElement.dataset.productId = id;
         imageElement.src = image;
@@ -30,7 +31,7 @@ export default (products, template, target, isTargetList = false, templateClass 
         priceElement.textContent = `${price} ₽`;
         oldPriceElement.textContent = `${oldPrice} ₽`;
 
-        if(status === 'hot') {
+        if(isBig) {
             itemElement.classList.remove('product')
             itemElement.classList.add('product-exclusive')
             itemElement.classList.add('product-exclusive--hot');
@@ -38,7 +39,8 @@ export default (products, template, target, isTargetList = false, templateClass 
             nameElement.classList.add('product-exclusive__name')
             priceElement.classList.add('product-exclusive__price')
             oldPriceElement.classList.add('product-exclusive__old-price')
-        }  if(status === 'new'){
+        }  
+        if(status === 'new'){
             itemElement.classList.add(`product--${status}`);
         }
        
@@ -47,5 +49,5 @@ export default (products, template, target, isTargetList = false, templateClass 
     });
     target.innerHTML = '';
     target.appendChild(fragment);
-
+    getAddtoCardBtns(target)
 }
