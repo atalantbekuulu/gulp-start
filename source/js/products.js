@@ -1,4 +1,4 @@
-export default [
+/* export default [
     {
         id: 1,
         isBig: true,
@@ -26,4 +26,4 @@ export default [
         price: '2999',
         oldPrice: '3999'
     },
-]
+] */
